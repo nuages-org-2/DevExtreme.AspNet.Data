@@ -1,10 +1,10 @@
-job("Deploy Nuages.Authentication"){
+job("Deploy DevExtreme.AspNet.Data"){
     container("mcr.microsoft.com/dotnet/sdk:5.0"){
         env["FEED_URL"] = "https://nuget.pkg.jetbrains.space/nuages/p/nuages/nuget/v3/index.json"
         shellScript {
             content = """
                 echo "BUILD nuget package"
-                dotnet build net/DevExtreme.AspNet.Data/DevExtreme.AspNet.Data.csproj -c release                 
+                dotnet build net/DevExtreme.AspNet.Data/DevExtreme.AspNet.Data.csproj -c release
                 if [ $? -eq 0 ]; then
 
                     if [ $? -eq 0 ]; then
