@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Version>99.0</Version>
-    <PackageId>DevExtreme.AspNet.Data</PackageId>
+    <PackageId>Nuages.DevExtreme.AspNet.Data</PackageId>
     <Description>%meta_description%</Description>
     <Authors>%meta_company%</Authors>
     <Copyright>%meta_copyright%</Copyright>
