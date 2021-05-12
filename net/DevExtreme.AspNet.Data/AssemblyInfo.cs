@@ -10,6 +10,6 @@ using System.Runtime.CompilerServices;
 
 [assembly: CLSCompliant(true)]
 
-#if !DEBUG
-[assembly: AssemblyKeyFile("release.snk.enc")]
-#endif
+// #if !DEBUG
+// [assembly: AssemblyKeyFile("release.snk.enc")]
+// #endif
