@@ -316,6 +316,12 @@ namespace DevExtreme.AspNet.Data {
             if(last.Type != typeof(String))
                 return;
 
+            //Fix to ignore field ending with Id
+            if(last is MemberExpression m) {
+                if(m.Member.Name.EndsWith("Id"))
+                    return;
+            }
+
             var toLowerMethod = typeof(String).GetMethod(nameof(String.ToLower), Type.EmptyTypes);
             var toLowerCall = Expression.Call(last, toLowerMethod);
 

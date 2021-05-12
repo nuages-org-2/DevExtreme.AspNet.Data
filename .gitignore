@@ -3,6 +3,7 @@ obj/
 .vs/
 node_modules/
 net/packages/
+net/*/packages/
 net/DevExtreme.AspNet.Data/release.snk
 /js-nojquery/
 /js-test/coverage/
@@ -13,3 +14,4 @@ net/DevExtreme.AspNet.Data/release.snk
 project.lock.json
 *.suo
 *.*proj.user
+.idea
